@@ -70,7 +70,11 @@ ul {
 }
 
 .film-title {
+  flex-grow: 1;
   justify-self: start;
+  max-height: 100px;
+  overflow: scroll;
   font-weight: bold;
   font-size: 25px;
+  word-wrap: break-word;
 }
