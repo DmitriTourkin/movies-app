@@ -33,19 +33,22 @@ ul {
 
 .film-details {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
 }
 
 .film-info {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .film-image {
   justify-self: center;
   align-self: center;
-  width: 100px;
-  height: 500px;
+  width: fit-content;
+  max-height: 300px;
+  border-radius: 15px;
 }
 
 .film-image:before {  

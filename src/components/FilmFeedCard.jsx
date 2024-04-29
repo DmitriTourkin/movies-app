@@ -26,7 +26,6 @@ export default function FilmFeedCard(props) {
               <p className="film-rate">{props.filmData.vote_average.toFixed(1)}</p>
               <div className="film-info">
                 <p className="film-title">{props.filmData.title}</p>
-                <p className="film-publication-date">Релиз: {props.filmData.release_date}</p>
               </div>
             </>
         </div>
