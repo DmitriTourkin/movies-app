@@ -14,3 +14,8 @@ ul .alike-films {
   padding: 8px 15px;
   background-color: #EDEEF0;
 }
+
+.alike-films-error {
+  font-weight: bold;
+  font-size: 25px;
+}

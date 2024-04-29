@@ -7,8 +7,7 @@ import { CircularProgress } from "@mui/material";
 
 const FilmDetailedCard = (props) => {
   const { movieId } = useParams();
-  const tops = useContext(TopFilmsContext);  
-  const [film, setFilmData] = useState([]);
+  const [film, setFilmData] = useState(null);
 
   const getFilmById = async (movieId) => {
     const url = `https://api.themoviedb.org/3/movie/${movieId}?language=ru-RU`;
@@ -16,22 +15,27 @@ const FilmDetailedCard = (props) => {
     try {
       const response = await fetch(url, options); 
       const data = await response.json();
-      setFilmData(data);
-    } catch(error) {
-      console.log(error);
+      setFilmData(data); 
+      }
+    catch(error) {
       setFilmData(null);
     }
   }
 
   useEffect(() => {
     getFilmById(movieId);
-  }, [movieId, tops]);
+  }, []);
+  
+
+  useEffect(() => {
+    getFilmById(movieId);
+  }, [movieId, film]);
 
   return (
-    (film === null) ? (
+    !film ? (
       <div className="loading-details">
         <CircularProgress/>
-        <p className="loading">Загрузка данных о фильме. Попробуйте перезагрузить страницу</p>
+        <p className="loading">Загрузка данных о фильме...</p>
       </div>
     ) : (
       <div className="page-content">
@@ -61,7 +65,7 @@ const FilmDetailedCard = (props) => {
           <AlikeFilmsDataStrip movieId={movieId}/>
         </div>
       </div>
-    )
+    ) 
   );
 }
   
