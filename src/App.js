@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import FilmDetailedCard from './components/FilmDetailedCard';
 import LendingPage from './pages/LendingPage';
 import './styles/components-styles/error.css'
-import './styles/fonts.css';
+import './fonts/fonts.css'
 import Test from './pages/Test';
 
 function App() {

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'VK';
+  src: url('../fonts/VK_Sans_Display_Regular.ttf') format('truetype');
+};
+
+@font-face {
+  font-family: 'VK';
+  font-weight: bold;
+  src: url('../fonts/VKSansDisplay-Medium.ttf') format('truetype');
+};
