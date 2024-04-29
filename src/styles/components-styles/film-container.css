@@ -1,0 +1,12 @@
+.film-list-item {
+  list-style: none;
+}
+
+.film-rate {
+  font-size: 40px;
+}
+
+.link-to-movie {
+  text-decoration: none;
+  color: black;
+}

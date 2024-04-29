@@ -1,0 +1,73 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.feed-film-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 300px;
+  height: 450px;
+  margin-block-start: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.feed-film-card:hover {
+  border: 1px solid rgb(255, 167, 4);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  color: orange;
+}
+
+.feed-film-card:active {
+  border: 1px solid rgb(236, 150, 2);
+  box-shadow: 0px 0px 10px 20px rgba(255, 177, 75, 0.2);
+  color: orange;
+  transition: all 0.5s;
+}
+
+.film-details {
+  display: flex;
+  gap: 20px;
+}
+
+.film-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.film-image {
+  justify-self: center;
+  align-self: center;
+  width: 100px;
+  height: 500px;
+}
+
+.film-image:before {  
+  content: "Извините, изображение не загруженно :(";
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.film-image:after {  
+  content: "(url: " attr(src) ")";
+  display: block;
+  font-size: 12px;
+}
+
+.film-rate {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.film-title {
+  justify-self: start;
+  font-weight: bold;
+  font-size: 25px;
+}

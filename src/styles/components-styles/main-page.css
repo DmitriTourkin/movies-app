@@ -1,0 +1,42 @@
+body {
+  background-color: #EDEEF0;
+  font-family: 'VK Sans Display', Arial;
+}
+
+.best-movies-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(13deg, transparent 460px, hsl(37, 94%, 70%) 1000px);
+}
+
+.best-movies-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+.best-movies-description {
+  max-width: 40%;
+  text-align: center;
+}
+
+.top-rated {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.films-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+

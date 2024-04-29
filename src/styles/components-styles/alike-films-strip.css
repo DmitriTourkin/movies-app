@@ -1,0 +1,16 @@
+ul .alike-films {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alike-films {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  gap: 15px;
+  transform: scale(1);
+  border-radius: 15px;
+  padding: 8px 15px;
+  background-color: #EDEEF0;
+}

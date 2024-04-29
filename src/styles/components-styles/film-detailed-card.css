@@ -1,0 +1,102 @@
+.page-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.detailed-film-card {
+  height: fit-content;
+  background-color: white;
+  border-radius: 20px;
+  width: 80%;
+  margin: 40px;
+  padding: 50px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.film-title-detailed {
+  font-size: 50px;
+  transition: color 0.4s;
+}
+
+.film-title:hover{
+  color: orange;
+  transition: color 0.4s;
+}
+
+.film-title-detailed:hover{
+  color: orange;
+  transition: color 0.4s;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.film-poster {
+  min-width: 300px;
+  min-height: 500px;
+  border-radius: 20px;
+  background-color: #EDEEF0;
+}
+
+.genres-container {
+  max-width: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.genre-item {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  max-width: fit-content;
+  text-transform: capitalize;
+}
+
+.genre-item:hover {
+  padding: 6px;
+  border: 0;
+  background-color: orange;
+  transition: background-color 0.4s;
+}
+
+.to-best-link {
+  text-decoration: none;
+}
+
+.to-best-button {
+  font-size: 20px;
+  font-family: inherit;
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 7px;
+  transition: all 0.3s;
+}
+
+.to-best-button:hover {
+  color: white;
+  background-color: black;
+
+}
+
+.accent-field {
+  font-weight: bold;
+}
