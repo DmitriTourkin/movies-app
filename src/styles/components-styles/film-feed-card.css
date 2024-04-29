@@ -46,22 +46,9 @@ ul {
 .film-image {
   justify-self: center;
   align-self: center;
-  width: fit-content;
-  max-height: 300px;
   border-radius: 15px;
-}
-
-.film-image:before {  
-  content: "Извините, изображение не загруженно :(";
-  display: block;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.film-image:after {  
-  content: "(url: " attr(src) ")";
-  display: block;
-  font-size: 12px;
+  inline-size: fit-content;
+  max-block-size: 300px;
 }
 
 .film-rate {
@@ -72,9 +59,9 @@ ul {
 .film-title {
   flex-grow: 1;
   justify-self: start;
-  max-height: 100px;
   overflow: scroll;
   font-weight: bold;
   font-size: 25px;
   word-wrap: break-word;
+  max-block-size: 100px;
 }

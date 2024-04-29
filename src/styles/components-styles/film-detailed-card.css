@@ -5,21 +5,21 @@
 }
 
 .detailed-film-card {
-  height: fit-content;
-  background-color: white;
-  border-radius: 20px;
-  width: 80%;
+  inline-size: 80%;
+  block-size: fit-content;
   margin: 40px;
+  border-radius: 20px;
   padding: 50px;
+  background-color: white;
 }
 
 .card-header {
   display: flex;
   flex-direction: row;
-  gap: 10px;
   align-items: baseline;
-  font-size: 30px;
+  gap: 10px;
   font-weight: bold;
+  font-size: 30px;
 }
 
 .film-title-detailed {
@@ -40,39 +40,39 @@
 .card-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .film-poster {
-  min-width: 300px;
-  min-height: 500px;
+  min-inline-size: 300px;
+  min-block-size: 500px;
   border-radius: 20px;
   background-color: #EDEEF0;
 }
 
 .genres-container {
-  max-width: 200px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
   flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
+  gap: 10px;
+  max-inline-size: 200px;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .genre-item {
-  padding: 5px;
+  max-inline-size: fit-content;
   border: 1px solid gray;
   border-radius: 5px;
-  max-width: fit-content;
+  padding: 5px;
   text-transform: capitalize;
 }
 
 .genre-item:hover {
-  padding: 6px;
   border: 0;
+  padding: 6px;
   background-color: orange;
   transition: background-color 0.4s;
 }
@@ -82,12 +82,12 @@
 }
 
 .to-best-button {
-  font-size: 20px;
-  font-family: inherit;
-  width: 300px;
-  background-color: transparent;
+  inline-size: 300px;
   border: 1px solid gray;
   border-radius: 7px;
+  font-family: inherit;
+  font-size: 20px;
+  background-color: transparent;
   transition: all 0.3s;
 }
 
@@ -102,10 +102,10 @@
 }
 
 .loading-details {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  block-size: 100vh;
 }
 

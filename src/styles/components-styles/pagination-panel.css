@@ -1,25 +1,25 @@
 .pagination-buttons-container {
-  align-self: end;
   right: 0;
-  max-width: 300px;
-  height: 100px;
   display: flex;
   flex-direction: row;
   gap: 5px;
+  align-self: end;
+  max-width: 300px;
+  height: 100px;
   overflow: scroll;
 }
 
 .paginaton-button {
-  width: max-content;
-  height: fit-content;
-  border-radius: 5px;
   border: none;
+  border-radius: 5px;
   padding: 10px;
+  inline-size: max-content;
+  block-size: fit-content;
 }
 
 .active-page {
-  background-color: orange;
   color: black;
-  width: fit-content;
-  height: 20px
+  background-color: orange;
+  inline-size: fit-content;
+  block-size: 20px;
 }

@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  min-width: 40%;
-  min-height: 320px;
+  min-inline-size: 40%;
+  min-block-size: 320px;
   margin: 30px;
   border-radius: 20px;
+  background-color: white;
 }
 
 .error-message {
