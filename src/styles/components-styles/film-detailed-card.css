@@ -100,3 +100,11 @@
 .accent-field {
   font-weight: bold;
 }
+
+.loading-details {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
