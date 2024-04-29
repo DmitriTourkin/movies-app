@@ -11,8 +11,7 @@ ul .alike-films {
   border-radius: 15px;
   padding: 8px 15px;
   overflow: scroll;
-  background-color: #EDEEF0;
-  transform: scale(1);
+  background-color: #edeef0;
 }
 
 .alike-films-error {
